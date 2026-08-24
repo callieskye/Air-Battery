@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleURLName</key>
+			<string>com.callieskye.AirBattery</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>airbattery</string>
+			</array>
+		</dict>
+	</array>
+	<key>NSAppleScriptEnabled</key>
+	<true/>
+	<key>NSDisableAutomaticTermination</key>
+	<true/>
+	<key>NSSupportsSuddenTermination</key>
+	<false/>
+	<key>OSAScriptingDefinition</key>
+	<string>Scriptable</string>
+	<!-- Fixes issue #80 (AirPods Pro 2 stopped appearing after updating to macOS Sequoia):
+	     this Info.plist never declared NSBluetoothAlwaysUsageDescription, which any app using
+	     CoreBluetooth (CBCentralManager, used throughout BLEBattery.swift to detect AirPods'
+	     lid-open/close broadcasts) is required by macOS to have. Its absence isn't reliably
+	     fatal on older macOS, but Sequoia tightened Bluetooth permission enforcement - matching
+	     exactly what the reporter saw: everything that doesn't depend on CoreBluetooth scanning
+	     (Mac, iPhone via WiFi-sync, Watch, a classic-Bluetooth mouse) kept working, while
+	     AirPods detection - which depends entirely on this BLE scan reaching centralManager.
+	     state == .poweredOn - silently stopped, with no error the user could see, no matter
+	     what they tried on their end. -->
+	<key>NSBluetoothAlwaysUsageDescription</key>
+	<string>AirBattery uses Bluetooth to read the battery level of your AirPods and other nearby Bluetooth accessories.</string>
+</dict>
+</plist>

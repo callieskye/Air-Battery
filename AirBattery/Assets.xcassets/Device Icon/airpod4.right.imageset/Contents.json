@@ -1,0 +1,16 @@
+{
+  "images" : [
+    {
+      "filename" : "airpod.gen4.right.svg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  },
+  "properties" : {
+    "preserves-vector-representation" : true,
+    "template-rendering-intent" : "template"
+  }
+}

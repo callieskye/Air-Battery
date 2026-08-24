@@ -1,0 +1,1566 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 70;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		180A51B82B84DC3700CF2D15 /* libimobiledevice in Resources */ = {isa = PBXBuildFile; fileRef = 180A51B72B84DC3700CF2D15 /* libimobiledevice */; };
+		180B1C0E2C1204E400DDB570 /* AppIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180B1C0D2C12017400DDB570 /* AppIntent.swift */; };
+		18283DA42B854776009B1B13 /* AirBatteryHelperApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18283DA32B854776009B1B13 /* AirBatteryHelperApp.swift */; };
+		18283DA82B854779009B1B13 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18283DA72B854779009B1B13 /* Assets.xcassets */; };
+		18283DAB2B854779009B1B13 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18283DAA2B854779009B1B13 /* Preview Assets.xcassets */; };
+		18283DB12B8549C6009B1B13 /* AirBatteryHelper.app in CopyFiles */ = {isa = PBXBuildFile; fileRef = 18283DA12B854776009B1B13 /* AirBatteryHelper.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		18347DCA2B882C6500A78DF6 /* MagicBattery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18347DC92B882C6400A78DF6 /* MagicBattery.swift */; };
+		18347DCE2B88417500A78DF6 /* BatteryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18347DCD2B88417500A78DF6 /* BatteryView.swift */; };
+		1841D4512AA6071C0022A1BE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1841D4502AA6071C0022A1BE /* ContentView.swift */; };
+		1841D47D2AAA20F80022A1BE /* InternalBattery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1841D47C2AAA20F80022A1BE /* InternalBattery.swift */; };
+		1841D4812AAA28880022A1BE /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1841D4802AAA28880022A1BE /* SettingsView.swift */; };
+		184ADEDA2DDB2C8A004791F0 /* ArgumentParser in Frameworks */ = {isa = PBXBuildFile; productRef = 184ADED92DDB2C8A004791F0 /* ArgumentParser */; };
+		184ADEE52DDB49C2004791F0 /* AirBatteryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F615F82B76439300873AA4 /* AirBatteryModel.swift */; };
+		184ADEE62DDB49C7004791F0 /* InternalBattery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1841D47C2AAA20F80022A1BE /* InternalBattery.swift */; };
+		184ADF022DDB6C9F004791F0 /* BTTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184ADEF52DDB6C9F004791F0 /* BTTool.swift */; };
+		184ADF032DDB6C9F004791F0 /* CommandLineTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184ADEF62DDB6C9F004791F0 /* CommandLineTool.swift */; };
+		184ADF052DDB6C9F004791F0 /* InfoButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184ADEF82DDB6C9F004791F0 /* InfoButton.swift */; };
+		184ADF082DDB6C9F004791F0 /* Supports.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184ADEFD2DDB6C9F004791F0 /* Supports.swift */; };
+		184ADF0D2DDB6C9F004791F0 /* Supports.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184ADEFD2DDB6C9F004791F0 /* Supports.swift */; };
+		184ADF0E2DDB83EC004791F0 /* abt in CopyFiles */ = {isa = PBXBuildFile; fileRef = 184ADED12DDB2B37004791F0 /* abt */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		185AE80E2BA6041400FE1AA2 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185AE80D2BA6041400FE1AA2 /* main.swift */; };
+		18892A892B81F8320017377E /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18892A882B81F8320017377E /* WidgetKit.framework */; };
+		18892A8B2B81F8320017377E /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18892A8A2B81F8320017377E /* SwiftUI.framework */; };
+		18892A8E2B81F8320017377E /* widgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18892A8D2B81F8320017377E /* widgetBundle.swift */; };
+		18892A902B81F8320017377E /* BatteryWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18892A8F2B81F8320017377E /* BatteryWidget.swift */; };
+		18892A992B81F8330017377E /* AirBatteryWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 18892A862B81F8320017377E /* AirBatteryWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		18892AA22B82F0880017377E /* AirBatteryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F615F82B76439300873AA4 /* AirBatteryModel.swift */; };
+		18892AA32B82F09C0017377E /* InternalBattery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1841D47C2AAA20F80022A1BE /* InternalBattery.swift */; };
+		189BD5E92BDE69660056D06C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 189BD5EB2BDE69660056D06C /* InfoPlist.strings */; };
+		18B8E5C92B83C9AD00A20D03 /* BatteryWidget2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B8E5C82B83C9AD00A20D03 /* BatteryWidget2.swift */; };
+		18BBC0672C16F4F900D9FE76 /* MultipeerKit in Frameworks */ = {isa = PBXBuildFile; productRef = 18BBC0662C16F4F900D9FE76 /* MultipeerKit */; };
+		18EF7E632C141CB70065A9E1 /* BatteryWidget3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EF7E622C1414A50065A9E1 /* BatteryWidget3.swift */; };
+		18F615F32B763DD800873AA4 /* BLEBattery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F615F22B763DD800873AA4 /* BLEBattery.swift */; };
+		231DA374303B526B00394459 /* Multipeer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231DA32D303B526B00394459 /* Multipeer.swift */; };
+		231DA37B303B526B00394459 /* AirBatteryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231DA326303B526B00394459 /* AirBatteryApp.swift */; };
+		231DA37C303B526B00394459 /* IDeviceBattery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231DA30D303B526B00394459 /* IDeviceBattery.swift */; };
+		231DA37D303B526B00394459 /* BatteryAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231DA333303B526B00394459 /* BatteryAlertView.swift */; };
+		231DA380303B526B00394459 /* GroupForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231DA32A303B526B00394459 /* GroupForm.swift */; };
+		231DA383303B526B00394459 /* WindowAccessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231DA331303B526B00394459 /* WindowAccessor.swift */; };
+		231DA385303B526B00394459 /* AppleScript.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231DA327303B526B00394459 /* AppleScript.swift */; };
+		231DA402303B52CD00394459 /* Supports.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231DA3C7303B52CD00394459 /* Supports.swift */; };
+		231DA419303B52CD00394459 /* BTDBattery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231DA3A3303B52CD00394459 /* BTDBattery.swift */; };
+		231DA435303B5B4200394459 /* AirBatteryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231DA3A1303B52CD00394459 /* AirBatteryModel.swift */; };
+		231DA436303B632900394459 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1841D4522AA6071D0022A1BE /* Assets.xcassets */; };
+		231DA437303B636800394459 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 231DA3A9303B52CD00394459 /* Localizable.strings */; };
+		231DA438303B655A00394459 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 231DA3A9303B52CD00394459 /* Localizable.strings */; };
+		231DA439303B657A00394459 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 231DA324303B526B00394459 /* Preview Assets.xcassets */; };
+		231DA43A303B658F00394459 /* logReader.sh in Resources */ = {isa = PBXBuildFile; fileRef = 231DA32C303B526B00394459 /* logReader.sh */; };
+		231DA43B303B65B100394459 /* Scriptable.sdef in Resources */ = {isa = PBXBuildFile; fileRef = 231DA32E303B526B00394459 /* Scriptable.sdef */; };
+		231DA43C303B661000394459 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1841D4522AA6071D0022A1BE /* Assets.xcassets */; };
+		231DA43D303B661C00394459 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 231DA39F303B52CD00394459 /* Credits.rtf */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		18892A972B81F8330017377E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1841D4432AA6071C0022A1BE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18892A852B81F8320017377E;
+			remoteInfo = widgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		18283DB02B8549B2009B1B13 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Contents/Library/LoginItems;
+			dstSubfolderSpec = 1;
+			files = (
+				18283DB12B8549C6009B1B13 /* AirBatteryHelper.app in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		184ADECF2DDB2B37004791F0 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		184ADEDC2DDB390D004791F0 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+				184ADF0E2DDB83EC004791F0 /* abt in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18892A9A2B81F8330017377E /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				18892A992B81F8330017377E /* AirBatteryWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		180A51B72B84DC3700CF2D15 /* libimobiledevice */ = {isa = PBXFileReference; lastKnownFileType = folder; name = libimobiledevice; path = AirBattery/libimobiledevice; sourceTree = "<group>"; };
+		180B1C0D2C12017400DDB570 /* AppIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIntent.swift; sourceTree = "<group>"; };
+		1819E94B2CC2A8C2007B95E9 /* BatteryAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteryAlertView.swift; sourceTree = "<group>"; };
+		18283DA12B854776009B1B13 /* AirBatteryHelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AirBatteryHelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		18283DA32B854776009B1B13 /* AirBatteryHelperApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirBatteryHelperApp.swift; sourceTree = "<group>"; };
+		18283DA72B854779009B1B13 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		18283DAA2B854779009B1B13 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		18283DAC2B854779009B1B13 /* AirBatteryHelper.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AirBatteryHelper.entitlements; sourceTree = "<group>"; };
+		18283DB22B8583A4009B1B13 /* AirBattery.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = AirBattery.entitlements; sourceTree = "<group>"; };
+		18347DC92B882C6400A78DF6 /* MagicBattery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MagicBattery.swift; sourceTree = "<group>"; };
+		18347DCD2B88417500A78DF6 /* BatteryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteryView.swift; sourceTree = "<group>"; };
+		1841D44B2AA6071C0022A1BE /* AirBattery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AirBattery.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1841D4502AA6071C0022A1BE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		1841D4522AA6071D0022A1BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1841D4552AA6071D0022A1BE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1841D47B2AA8DF0B0022A1BE /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		1841D47C2AAA20F80022A1BE /* InternalBattery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternalBattery.swift; sourceTree = "<group>"; };
+		1841D4802AAA28880022A1BE /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		184ADED12DDB2B37004791F0 /* abt */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = abt; sourceTree = BUILT_PRODUCTS_DIR; };
+		184ADEF32DDB6C9F004791F0 /* AirBatteryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirBatteryApp.swift; sourceTree = "<group>"; };
+		184ADEF42DDB6C9F004791F0 /* AppleScript.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleScript.swift; sourceTree = "<group>"; };
+		184ADEF52DDB6C9F004791F0 /* BTTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BTTool.swift; sourceTree = "<group>"; };
+		184ADEF62DDB6C9F004791F0 /* CommandLineTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandLineTool.swift; sourceTree = "<group>"; };
+		184ADEF72DDB6C9F004791F0 /* GroupForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupForm.swift; sourceTree = "<group>"; };
+		184ADEF82DDB6C9F004791F0 /* InfoButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoButton.swift; sourceTree = "<group>"; };
+		184ADEF92DDB6C9F004791F0 /* logReader.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = logReader.sh; sourceTree = "<group>"; };
+		184ADEFA2DDB6C9F004791F0 /* Multipeer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Multipeer.swift; sourceTree = "<group>"; };
+		184ADEFB2DDB6C9F004791F0 /* Scriptable.sdef */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Scriptable.sdef; sourceTree = "<group>"; };
+		184ADEFC2DDB6C9F004791F0 /* Sparkle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sparkle.swift; sourceTree = "<group>"; };
+		184ADEFD2DDB6C9F004791F0 /* Supports.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Supports.swift; sourceTree = "<group>"; };
+		184ADEFE2DDB6C9F004791F0 /* WindowAccessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowAccessor.swift; sourceTree = "<group>"; };
+		185AE80D2BA6041400FE1AA2 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		185E382C2C2733B9005578EC /* BTDBattery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BTDBattery.swift; sourceTree = "<group>"; };
+		186671CC2B791CF700D4D27B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18892A862B81F8320017377E /* AirBatteryWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = AirBatteryWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		18892A882B81F8320017377E /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		18892A8A2B81F8320017377E /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		18892A8D2B81F8320017377E /* widgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = widgetBundle.swift; sourceTree = "<group>"; };
+		18892A8F2B81F8320017377E /* BatteryWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteryWidget.swift; sourceTree = "<group>"; };
+		18892A952B81F8330017377E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18892A962B81F8330017377E /* widget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = widget.entitlements; sourceTree = "<group>"; };
+		1893984B2DF73D6800E7C32E /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = "zh-Hant"; path = "zh-Hant.lproj/Credits.rtf"; sourceTree = "<group>"; };
+		1893984C2DF73D8100E7C32E /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		1893984D2DF73DF000E7C32E /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		1895851A2B724DCD00108E5C /* IDeviceBattery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDeviceBattery.swift; sourceTree = "<group>"; };
+		189BD5EA2BDE69660056D06C /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		18A0A9CC2AAE07EA00975B81 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = "zh-Hans"; path = "zh-Hans.lproj/Credits.rtf"; sourceTree = "<group>"; };
+		18B8E5C82B83C9AD00A20D03 /* BatteryWidget2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteryWidget2.swift; sourceTree = "<group>"; };
+		18C7CFDE2AAF842E005898EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = Base; path = Base.lproj/Credits.rtf; sourceTree = "<group>"; };
+		18EF7E622C1414A50065A9E1 /* BatteryWidget3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteryWidget3.swift; sourceTree = "<group>"; };
+		18F615F22B763DD800873AA4 /* BLEBattery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLEBattery.swift; sourceTree = "<group>"; };
+		18F615F82B76439300873AA4 /* AirBatteryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirBatteryModel.swift; sourceTree = "<group>"; };
+		231DA304303B521100394459 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		231DA307303B526B00394459 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = Base; path = Credits.rtf; sourceTree = "<group>"; };
+		231DA30A303B526B00394459 /* AirBatteryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirBatteryModel.swift; sourceTree = "<group>"; };
+		231DA30B303B526B00394459 /* BLEBattery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLEBattery.swift; sourceTree = "<group>"; };
+		231DA30C303B526B00394459 /* BTDBattery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BTDBattery.swift; sourceTree = "<group>"; };
+		231DA30D303B526B00394459 /* IDeviceBattery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDeviceBattery.swift; sourceTree = "<group>"; };
+		231DA30E303B526B00394459 /* InternalBattery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternalBattery.swift; sourceTree = "<group>"; };
+		231DA30F303B526B00394459 /* MagicBattery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicBattery.swift; sourceTree = "<group>"; };
+		231DA311303B526B00394459 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = Localizable.strings; sourceTree = "<group>"; };
+		231DA314303B526B00394459 /* comptest */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = comptest; sourceTree = "<group>"; };
+		231DA315303B526B00394459 /* idevice_id */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = idevice_id; sourceTree = "<group>"; };
+		231DA316303B526B00394459 /* ideviceinfo */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = ideviceinfo; sourceTree = "<group>"; };
+		231DA317303B526B00394459 /* idevicesyslog */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = idevicesyslog; sourceTree = "<group>"; };
+		231DA318303B526B00394459 /* wificonnection */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = wificonnection; sourceTree = "<group>"; };
+		231DA319303B526B00394459 /* wificonnection.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = wificonnection.c; sourceTree = "<group>"; };
+		231DA31B303B526B00394459 /* libcrypto.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libcrypto.3.dylib; sourceTree = "<group>"; };
+		231DA31C303B526B00394459 /* libimobiledevice-1.0.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "libimobiledevice-1.0.6.dylib"; sourceTree = "<group>"; };
+		231DA31D303B526B00394459 /* libimobiledevice-glue-1.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "libimobiledevice-glue-1.0.0.dylib"; sourceTree = "<group>"; };
+		231DA31E303B526B00394459 /* libplist-2.0.4.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "libplist-2.0.4.dylib"; sourceTree = "<group>"; };
+		231DA31F303B526B00394459 /* libssl.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libssl.3.dylib; sourceTree = "<group>"; };
+		231DA320303B526B00394459 /* libusbmuxd-2.0.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "libusbmuxd-2.0.6.dylib"; sourceTree = "<group>"; };
+		231DA322303B526B00394459 /* COPYING */ = {isa = PBXFileReference; lastKnownFileType = text; path = COPYING; sourceTree = "<group>"; };
+		231DA324303B526B00394459 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		231DA326303B526B00394459 /* AirBatteryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirBatteryApp.swift; sourceTree = "<group>"; };
+		231DA327303B526B00394459 /* AppleScript.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleScript.swift; sourceTree = "<group>"; };
+		231DA328303B526B00394459 /* BTTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BTTool.swift; sourceTree = "<group>"; };
+		231DA329303B526B00394459 /* CommandLineTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandLineTool.swift; sourceTree = "<group>"; };
+		231DA32A303B526B00394459 /* GroupForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupForm.swift; sourceTree = "<group>"; };
+		231DA32B303B526B00394459 /* InfoButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoButton.swift; sourceTree = "<group>"; };
+		231DA32C303B526B00394459 /* logReader.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = logReader.sh; sourceTree = "<group>"; };
+		231DA32D303B526B00394459 /* Multipeer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Multipeer.swift; sourceTree = "<group>"; };
+		231DA32E303B526B00394459 /* Scriptable.sdef */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Scriptable.sdef; sourceTree = "<group>"; };
+		231DA330303B526B00394459 /* Supports.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Supports.swift; sourceTree = "<group>"; };
+		231DA331303B526B00394459 /* WindowAccessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowAccessor.swift; sourceTree = "<group>"; };
+		231DA333303B526B00394459 /* BatteryAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteryAlertView.swift; sourceTree = "<group>"; };
+		231DA334303B526B00394459 /* BatteryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteryView.swift; sourceTree = "<group>"; };
+		231DA335303B526B00394459 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		231DA336303B526B00394459 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		231DA338303B526B00394459 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = "zh-Hans"; path = Credits.rtf; sourceTree = "<group>"; };
+		231DA33A303B526B00394459 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = InfoPlist.strings; sourceTree = "<group>"; };
+		231DA33C303B526B00394459 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = Localizable.strings; sourceTree = "<group>"; };
+		231DA33F303B526B00394459 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = "zh-Hant"; path = Credits.rtf; sourceTree = "<group>"; };
+		231DA341303B526B00394459 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = InfoPlist.strings; sourceTree = "<group>"; };
+		231DA343303B526B00394459 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = Localizable.strings; sourceTree = "<group>"; };
+		231DA39E303B52CD00394459 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = Base; path = Credits.rtf; sourceTree = "<group>"; };
+		231DA3A1303B52CD00394459 /* AirBatteryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirBatteryModel.swift; sourceTree = "<group>"; };
+		231DA3A2303B52CD00394459 /* BLEBattery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLEBattery.swift; sourceTree = "<group>"; };
+		231DA3A3303B52CD00394459 /* BTDBattery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BTDBattery.swift; sourceTree = "<group>"; };
+		231DA3A4303B52CD00394459 /* IDeviceBattery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDeviceBattery.swift; sourceTree = "<group>"; };
+		231DA3A5303B52CD00394459 /* InternalBattery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternalBattery.swift; sourceTree = "<group>"; };
+		231DA3A6303B52CD00394459 /* MagicBattery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicBattery.swift; sourceTree = "<group>"; };
+		231DA3A8303B52CD00394459 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = Localizable.strings; sourceTree = "<group>"; };
+		231DA3AB303B52CD00394459 /* comptest */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = comptest; sourceTree = "<group>"; };
+		231DA3AC303B52CD00394459 /* idevice_id */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = idevice_id; sourceTree = "<group>"; };
+		231DA3AD303B52CD00394459 /* ideviceinfo */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = ideviceinfo; sourceTree = "<group>"; };
+		231DA3AE303B52CD00394459 /* idevicesyslog */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = idevicesyslog; sourceTree = "<group>"; };
+		231DA3AF303B52CD00394459 /* wificonnection */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = wificonnection; sourceTree = "<group>"; };
+		231DA3B0303B52CD00394459 /* wificonnection.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = wificonnection.c; sourceTree = "<group>"; };
+		231DA3B2303B52CD00394459 /* libcrypto.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libcrypto.3.dylib; sourceTree = "<group>"; };
+		231DA3B3303B52CD00394459 /* libimobiledevice-1.0.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "libimobiledevice-1.0.6.dylib"; sourceTree = "<group>"; };
+		231DA3B4303B52CD00394459 /* libimobiledevice-glue-1.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "libimobiledevice-glue-1.0.0.dylib"; sourceTree = "<group>"; };
+		231DA3B5303B52CD00394459 /* libplist-2.0.4.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "libplist-2.0.4.dylib"; sourceTree = "<group>"; };
+		231DA3B6303B52CD00394459 /* libssl.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libssl.3.dylib; sourceTree = "<group>"; };
+		231DA3B7303B52CD00394459 /* libusbmuxd-2.0.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "libusbmuxd-2.0.6.dylib"; sourceTree = "<group>"; };
+		231DA3B9303B52CD00394459 /* COPYING */ = {isa = PBXFileReference; lastKnownFileType = text; path = COPYING; sourceTree = "<group>"; };
+		231DA3BB303B52CD00394459 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		231DA3BD303B52CD00394459 /* AirBatteryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirBatteryApp.swift; sourceTree = "<group>"; };
+		231DA3BE303B52CD00394459 /* AppleScript.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleScript.swift; sourceTree = "<group>"; };
+		231DA3BF303B52CD00394459 /* BTTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BTTool.swift; sourceTree = "<group>"; };
+		231DA3C0303B52CD00394459 /* CommandLineTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandLineTool.swift; sourceTree = "<group>"; };
+		231DA3C1303B52CD00394459 /* GroupForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupForm.swift; sourceTree = "<group>"; };
+		231DA3C2303B52CD00394459 /* InfoButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoButton.swift; sourceTree = "<group>"; };
+		231DA3C3303B52CD00394459 /* logReader.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = logReader.sh; sourceTree = "<group>"; };
+		231DA3C4303B52CD00394459 /* Multipeer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Multipeer.swift; sourceTree = "<group>"; };
+		231DA3C5303B52CD00394459 /* Scriptable.sdef */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Scriptable.sdef; sourceTree = "<group>"; };
+		231DA3C6303B52CD00394459 /* Sparkle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sparkle.swift; sourceTree = "<group>"; };
+		231DA3C7303B52CD00394459 /* Supports.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Supports.swift; sourceTree = "<group>"; };
+		231DA3C8303B52CD00394459 /* WindowAccessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowAccessor.swift; sourceTree = "<group>"; };
+		231DA3CA303B52CD00394459 /* BatteryAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteryAlertView.swift; sourceTree = "<group>"; };
+		231DA3CB303B52CD00394459 /* BatteryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteryView.swift; sourceTree = "<group>"; };
+		231DA3CC303B52CD00394459 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		231DA3CD303B52CD00394459 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		231DA3CF303B52CD00394459 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = "zh-Hans"; path = Credits.rtf; sourceTree = "<group>"; };
+		231DA3D1303B52CD00394459 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = InfoPlist.strings; sourceTree = "<group>"; };
+		231DA3D3303B52CD00394459 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = Localizable.strings; sourceTree = "<group>"; };
+		231DA3D6303B52CD00394459 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = "zh-Hant"; path = Credits.rtf; sourceTree = "<group>"; };
+		231DA3D8303B52CD00394459 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = InfoPlist.strings; sourceTree = "<group>"; };
+		231DA3DA303B52CD00394459 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = Localizable.strings; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		184ADED22DDB2B37004791F0 /* abt */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = abt; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		18283D9E2B854776009B1B13 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1841D4482AA6071C0022A1BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18BBC0672C16F4F900D9FE76 /* MultipeerKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		184ADECE2DDB2B37004791F0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				184ADEDA2DDB2C8A004791F0 /* ArgumentParser in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18892A832B81F8320017377E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18892A8B2B81F8320017377E /* SwiftUI.framework in Frameworks */,
+				18892A892B81F8320017377E /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		18283DA22B854776009B1B13 /* AirBatteryHelper */ = {
+			isa = PBXGroup;
+			children = (
+				231DA305303B521100394459 /* Preview Content */,
+				18283DA32B854776009B1B13 /* AirBatteryHelperApp.swift */,
+				185AE80D2BA6041400FE1AA2 /* main.swift */,
+				18283DA72B854779009B1B13 /* Assets.xcassets */,
+				18283DAC2B854779009B1B13 /* AirBatteryHelper.entitlements */,
+				18283DA92B854779009B1B13 /* Preview Content */,
+			);
+			path = AirBatteryHelper;
+			sourceTree = "<group>";
+		};
+		18283DA92B854779009B1B13 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				18283DAA2B854779009B1B13 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1841D4422AA6071C0022A1BE = {
+			isa = PBXGroup;
+			children = (
+				189BD5EB2BDE69660056D06C /* InfoPlist.strings */,
+				180A51B72B84DC3700CF2D15 /* libimobiledevice */,
+				1841D44D2AA6071C0022A1BE /* AirBattery */,
+				18892A8C2B81F8320017377E /* widget */,
+				18283DA22B854776009B1B13 /* AirBatteryHelper */,
+				184ADED22DDB2B37004791F0 /* abt */,
+				18892A872B81F8320017377E /* Frameworks */,
+				1841D44C2AA6071C0022A1BE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1841D44C2AA6071C0022A1BE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1841D44B2AA6071C0022A1BE /* AirBattery.app */,
+				18892A862B81F8320017377E /* AirBatteryWidgetExtension.appex */,
+				18283DA12B854776009B1B13 /* AirBatteryHelper.app */,
+				184ADED12DDB2B37004791F0 /* abt */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1841D44D2AA6071C0022A1BE /* AirBattery */ = {
+			isa = PBXGroup;
+			children = (
+				231DA3A0303B52CD00394459 /* Base.lproj */,
+				231DA3A7303B52CD00394459 /* BatteryInfo */,
+				231DA3AA303B52CD00394459 /* en.lproj */,
+				231DA3BA303B52CD00394459 /* libimobiledevice */,
+				231DA3BC303B52CD00394459 /* Preview Content */,
+				231DA3C9303B52CD00394459 /* Supports */,
+				231DA3CE303B52CD00394459 /* ViewModel */,
+				231DA3D5303B52CD00394459 /* zh-Hans.lproj */,
+				231DA3DC303B52CD00394459 /* zh-Hant.lproj */,
+				231DA309303B526B00394459 /* Base.lproj */,
+				231DA310303B526B00394459 /* BatteryInfo */,
+				231DA313303B526B00394459 /* en.lproj */,
+				231DA323303B526B00394459 /* libimobiledevice */,
+				231DA325303B526B00394459 /* Preview Content */,
+				231DA332303B526B00394459 /* Supports */,
+				231DA337303B526B00394459 /* ViewModel */,
+				231DA33E303B526B00394459 /* zh-Hans.lproj */,
+				231DA345303B526B00394459 /* zh-Hant.lproj */,
+				184ADEFF2DDB6C9F004791F0 /* Supports */,
+				18F615F72B763FC900873AA4 /* ViewModel */,
+				18F615F62B763FAB00873AA4 /* BatteryInfo */,
+				18A0A9CD2AAE07EA00975B81 /* Credits.rtf */,
+				1841D4522AA6071D0022A1BE /* Assets.xcassets */,
+				186671CC2B791CF700D4D27B /* Info.plist */,
+				18283DB22B8583A4009B1B13 /* AirBattery.entitlements */,
+				1841D47A2AA8DEF20022A1BE /* Localizable.strings */,
+				1841D4542AA6071D0022A1BE /* Preview Content */,
+			);
+			path = AirBattery;
+			sourceTree = "<group>";
+		};
+		1841D4542AA6071D0022A1BE /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				1841D4552AA6071D0022A1BE /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		184ADEFF2DDB6C9F004791F0 /* Supports */ = {
+			isa = PBXGroup;
+			children = (
+				184ADEF32DDB6C9F004791F0 /* AirBatteryApp.swift */,
+				184ADEF42DDB6C9F004791F0 /* AppleScript.swift */,
+				184ADEF52DDB6C9F004791F0 /* BTTool.swift */,
+				184ADEF62DDB6C9F004791F0 /* CommandLineTool.swift */,
+				184ADEF72DDB6C9F004791F0 /* GroupForm.swift */,
+				184ADEF82DDB6C9F004791F0 /* InfoButton.swift */,
+				184ADEF92DDB6C9F004791F0 /* logReader.sh */,
+				184ADEFA2DDB6C9F004791F0 /* Multipeer.swift */,
+				184ADEFB2DDB6C9F004791F0 /* Scriptable.sdef */,
+				184ADEFC2DDB6C9F004791F0 /* Sparkle.swift */,
+				184ADEFD2DDB6C9F004791F0 /* Supports.swift */,
+				184ADEFE2DDB6C9F004791F0 /* WindowAccessor.swift */,
+			);
+			path = Supports;
+			sourceTree = "<group>";
+		};
+		18892A872B81F8320017377E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				18892A882B81F8320017377E /* WidgetKit.framework */,
+				18892A8A2B81F8320017377E /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		18892A8C2B81F8320017377E /* widget */ = {
+			isa = PBXGroup;
+			children = (
+				18892A8D2B81F8320017377E /* widgetBundle.swift */,
+				180B1C0D2C12017400DDB570 /* AppIntent.swift */,
+				18892A8F2B81F8320017377E /* BatteryWidget.swift */,
+				18B8E5C82B83C9AD00A20D03 /* BatteryWidget2.swift */,
+				18EF7E622C1414A50065A9E1 /* BatteryWidget3.swift */,
+				18892A952B81F8330017377E /* Info.plist */,
+				18892A962B81F8330017377E /* widget.entitlements */,
+			);
+			path = widget;
+			sourceTree = "<group>";
+		};
+		18F615F62B763FAB00873AA4 /* BatteryInfo */ = {
+			isa = PBXGroup;
+			children = (
+				1841D47C2AAA20F80022A1BE /* InternalBattery.swift */,
+				1895851A2B724DCD00108E5C /* IDeviceBattery.swift */,
+				18347DC92B882C6400A78DF6 /* MagicBattery.swift */,
+				185E382C2C2733B9005578EC /* BTDBattery.swift */,
+				18F615F22B763DD800873AA4 /* BLEBattery.swift */,
+				18F615F82B76439300873AA4 /* AirBatteryModel.swift */,
+			);
+			path = BatteryInfo;
+			sourceTree = "<group>";
+		};
+		18F615F72B763FC900873AA4 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1841D4502AA6071C0022A1BE /* ContentView.swift */,
+				18347DCD2B88417500A78DF6 /* BatteryView.swift */,
+				1819E94B2CC2A8C2007B95E9 /* BatteryAlertView.swift */,
+				1841D4802AAA28880022A1BE /* SettingsView.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		231DA305303B521100394459 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				231DA304303B521100394459 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		231DA309303B526B00394459 /* Base.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				231DA308303B526B00394459 /* Credits.rtf */,
+			);
+			path = Base.lproj;
+			sourceTree = "<group>";
+		};
+		231DA310303B526B00394459 /* BatteryInfo */ = {
+			isa = PBXGroup;
+			children = (
+				231DA30A303B526B00394459 /* AirBatteryModel.swift */,
+				231DA30B303B526B00394459 /* BLEBattery.swift */,
+				231DA30C303B526B00394459 /* BTDBattery.swift */,
+				231DA30D303B526B00394459 /* IDeviceBattery.swift */,
+				231DA30E303B526B00394459 /* InternalBattery.swift */,
+				231DA30F303B526B00394459 /* MagicBattery.swift */,
+			);
+			path = BatteryInfo;
+			sourceTree = "<group>";
+		};
+		231DA313303B526B00394459 /* en.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				231DA312303B526B00394459 /* Localizable.strings */,
+			);
+			path = en.lproj;
+			sourceTree = "<group>";
+		};
+		231DA31A303B526B00394459 /* bin */ = {
+			isa = PBXGroup;
+			children = (
+				231DA314303B526B00394459 /* comptest */,
+				231DA315303B526B00394459 /* idevice_id */,
+				231DA316303B526B00394459 /* ideviceinfo */,
+				231DA317303B526B00394459 /* idevicesyslog */,
+				231DA318303B526B00394459 /* wificonnection */,
+				231DA319303B526B00394459 /* wificonnection.c */,
+			);
+			path = bin;
+			sourceTree = "<group>";
+		};
+		231DA321303B526B00394459 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				231DA31B303B526B00394459 /* libcrypto.3.dylib */,
+				231DA31C303B526B00394459 /* libimobiledevice-1.0.6.dylib */,
+				231DA31D303B526B00394459 /* libimobiledevice-glue-1.0.0.dylib */,
+				231DA31E303B526B00394459 /* libplist-2.0.4.dylib */,
+				231DA31F303B526B00394459 /* libssl.3.dylib */,
+				231DA320303B526B00394459 /* libusbmuxd-2.0.6.dylib */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		231DA323303B526B00394459 /* libimobiledevice */ = {
+			isa = PBXGroup;
+			children = (
+				231DA31A303B526B00394459 /* bin */,
+				231DA321303B526B00394459 /* lib */,
+				231DA322303B526B00394459 /* COPYING */,
+			);
+			path = libimobiledevice;
+			sourceTree = "<group>";
+		};
+		231DA325303B526B00394459 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				231DA324303B526B00394459 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		231DA332303B526B00394459 /* Supports */ = {
+			isa = PBXGroup;
+			children = (
+				231DA326303B526B00394459 /* AirBatteryApp.swift */,
+				231DA327303B526B00394459 /* AppleScript.swift */,
+				231DA328303B526B00394459 /* BTTool.swift */,
+				231DA329303B526B00394459 /* CommandLineTool.swift */,
+				231DA32A303B526B00394459 /* GroupForm.swift */,
+				231DA32B303B526B00394459 /* InfoButton.swift */,
+				231DA32C303B526B00394459 /* logReader.sh */,
+				231DA32D303B526B00394459 /* Multipeer.swift */,
+				231DA32E303B526B00394459 /* Scriptable.sdef */,
+				231DA330303B526B00394459 /* Supports.swift */,
+				231DA331303B526B00394459 /* WindowAccessor.swift */,
+			);
+			path = Supports;
+			sourceTree = "<group>";
+		};
+		231DA337303B526B00394459 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				231DA333303B526B00394459 /* BatteryAlertView.swift */,
+				231DA334303B526B00394459 /* BatteryView.swift */,
+				231DA335303B526B00394459 /* ContentView.swift */,
+				231DA336303B526B00394459 /* SettingsView.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		231DA33E303B526B00394459 /* zh-Hans.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				231DA339303B526B00394459 /* Credits.rtf */,
+				231DA33B303B526B00394459 /* InfoPlist.strings */,
+				231DA33D303B526B00394459 /* Localizable.strings */,
+			);
+			path = "zh-Hans.lproj";
+			sourceTree = "<group>";
+		};
+		231DA345303B526B00394459 /* zh-Hant.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				231DA340303B526B00394459 /* Credits.rtf */,
+				231DA342303B526B00394459 /* InfoPlist.strings */,
+				231DA344303B526B00394459 /* Localizable.strings */,
+			);
+			path = "zh-Hant.lproj";
+			sourceTree = "<group>";
+		};
+		231DA3A0303B52CD00394459 /* Base.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				231DA39F303B52CD00394459 /* Credits.rtf */,
+			);
+			path = Base.lproj;
+			sourceTree = "<group>";
+		};
+		231DA3A7303B52CD00394459 /* BatteryInfo */ = {
+			isa = PBXGroup;
+			children = (
+				231DA3A1303B52CD00394459 /* AirBatteryModel.swift */,
+				231DA3A2303B52CD00394459 /* BLEBattery.swift */,
+				231DA3A3303B52CD00394459 /* BTDBattery.swift */,
+				231DA3A4303B52CD00394459 /* IDeviceBattery.swift */,
+				231DA3A5303B52CD00394459 /* InternalBattery.swift */,
+				231DA3A6303B52CD00394459 /* MagicBattery.swift */,
+			);
+			path = BatteryInfo;
+			sourceTree = "<group>";
+		};
+		231DA3AA303B52CD00394459 /* en.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				231DA3A9303B52CD00394459 /* Localizable.strings */,
+			);
+			path = en.lproj;
+			sourceTree = "<group>";
+		};
+		231DA3B1303B52CD00394459 /* bin */ = {
+			isa = PBXGroup;
+			children = (
+				231DA3AB303B52CD00394459 /* comptest */,
+				231DA3AC303B52CD00394459 /* idevice_id */,
+				231DA3AD303B52CD00394459 /* ideviceinfo */,
+				231DA3AE303B52CD00394459 /* idevicesyslog */,
+				231DA3AF303B52CD00394459 /* wificonnection */,
+				231DA3B0303B52CD00394459 /* wificonnection.c */,
+			);
+			path = bin;
+			sourceTree = "<group>";
+		};
+		231DA3B8303B52CD00394459 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				231DA3B2303B52CD00394459 /* libcrypto.3.dylib */,
+				231DA3B3303B52CD00394459 /* libimobiledevice-1.0.6.dylib */,
+				231DA3B4303B52CD00394459 /* libimobiledevice-glue-1.0.0.dylib */,
+				231DA3B5303B52CD00394459 /* libplist-2.0.4.dylib */,
+				231DA3B6303B52CD00394459 /* libssl.3.dylib */,
+				231DA3B7303B52CD00394459 /* libusbmuxd-2.0.6.dylib */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		231DA3BA303B52CD00394459 /* libimobiledevice */ = {
+			isa = PBXGroup;
+			children = (
+				231DA3B1303B52CD00394459 /* bin */,
+				231DA3B8303B52CD00394459 /* lib */,
+				231DA3B9303B52CD00394459 /* COPYING */,
+			);
+			path = libimobiledevice;
+			sourceTree = "<group>";
+		};
+		231DA3BC303B52CD00394459 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				231DA3BB303B52CD00394459 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		231DA3C9303B52CD00394459 /* Supports */ = {
+			isa = PBXGroup;
+			children = (
+				231DA3BD303B52CD00394459 /* AirBatteryApp.swift */,
+				231DA3BE303B52CD00394459 /* AppleScript.swift */,
+				231DA3BF303B52CD00394459 /* BTTool.swift */,
+				231DA3C0303B52CD00394459 /* CommandLineTool.swift */,
+				231DA3C1303B52CD00394459 /* GroupForm.swift */,
+				231DA3C2303B52CD00394459 /* InfoButton.swift */,
+				231DA3C3303B52CD00394459 /* logReader.sh */,
+				231DA3C4303B52CD00394459 /* Multipeer.swift */,
+				231DA3C5303B52CD00394459 /* Scriptable.sdef */,
+				231DA3C6303B52CD00394459 /* Sparkle.swift */,
+				231DA3C7303B52CD00394459 /* Supports.swift */,
+				231DA3C8303B52CD00394459 /* WindowAccessor.swift */,
+			);
+			path = Supports;
+			sourceTree = "<group>";
+		};
+		231DA3CE303B52CD00394459 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				231DA3CA303B52CD00394459 /* BatteryAlertView.swift */,
+				231DA3CB303B52CD00394459 /* BatteryView.swift */,
+				231DA3CC303B52CD00394459 /* ContentView.swift */,
+				231DA3CD303B52CD00394459 /* SettingsView.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		231DA3D5303B52CD00394459 /* zh-Hans.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				231DA3D0303B52CD00394459 /* Credits.rtf */,
+				231DA3D2303B52CD00394459 /* InfoPlist.strings */,
+				231DA3D4303B52CD00394459 /* Localizable.strings */,
+			);
+			path = "zh-Hans.lproj";
+			sourceTree = "<group>";
+		};
+		231DA3DC303B52CD00394459 /* zh-Hant.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				231DA3D7303B52CD00394459 /* Credits.rtf */,
+				231DA3D9303B52CD00394459 /* InfoPlist.strings */,
+				231DA3DB303B52CD00394459 /* Localizable.strings */,
+			);
+			path = "zh-Hant.lproj";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		18283DA02B854776009B1B13 /* AirBatteryHelper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18283DAD2B854779009B1B13 /* Build configuration list for PBXNativeTarget "AirBatteryHelper" */;
+			buildPhases = (
+				18283D9D2B854776009B1B13 /* Sources */,
+				18283D9E2B854776009B1B13 /* Frameworks */,
+				18283D9F2B854776009B1B13 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AirBatteryHelper;
+			productName = AirBatteryHelper;
+			productReference = 18283DA12B854776009B1B13 /* AirBatteryHelper.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1841D44A2AA6071C0022A1BE /* AirBattery */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1841D45A2AA6071D0022A1BE /* Build configuration list for PBXNativeTarget "AirBattery" */;
+			buildPhases = (
+				1841D4472AA6071C0022A1BE /* Sources */,
+				1841D4482AA6071C0022A1BE /* Frameworks */,
+				1841D4492AA6071C0022A1BE /* Resources */,
+				18892A9A2B81F8330017377E /* Embed Foundation Extensions */,
+				18283DB02B8549B2009B1B13 /* CopyFiles */,
+				184ADEDC2DDB390D004791F0 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				18892A982B81F8330017377E /* PBXTargetDependency */,
+			);
+			name = AirBattery;
+			packageProductDependencies = (
+				18BBC0662C16F4F900D9FE76 /* MultipeerKit */,
+			);
+			productName = DockBattery;
+			productReference = 1841D44B2AA6071C0022A1BE /* AirBattery.app */;
+			productType = "com.apple.product-type.application";
+		};
+		184ADED02DDB2B37004791F0 /* abt */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 184ADED52DDB2B37004791F0 /* Build configuration list for PBXNativeTarget "abt" */;
+			buildPhases = (
+				184ADECD2DDB2B37004791F0 /* Sources */,
+				184ADECE2DDB2B37004791F0 /* Frameworks */,
+				184ADECF2DDB2B37004791F0 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				184ADED22DDB2B37004791F0 /* abt */,
+			);
+			name = abt;
+			packageProductDependencies = (
+				184ADED92DDB2C8A004791F0 /* ArgumentParser */,
+			);
+			productName = atb;
+			productReference = 184ADED12DDB2B37004791F0 /* abt */;
+			productType = "com.apple.product-type.tool";
+		};
+		18892A852B81F8320017377E /* AirBatteryWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18892A9D2B81F8330017377E /* Build configuration list for PBXNativeTarget "AirBatteryWidgetExtension" */;
+			buildPhases = (
+				18892A822B81F8320017377E /* Sources */,
+				18892A832B81F8320017377E /* Frameworks */,
+				18892A842B81F8320017377E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AirBatteryWidgetExtension;
+			productName = widgetExtension;
+			productReference = 18892A862B81F8320017377E /* AirBatteryWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1841D4432AA6071C0022A1BE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1620;
+				LastUpgradeCheck = 2660;
+				TargetAttributes = {
+					18283DA02B854776009B1B13 = {
+						CreatedOnToolsVersion = 15.1;
+					};
+					1841D44A2AA6071C0022A1BE = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					184ADED02DDB2B37004791F0 = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					18892A852B81F8320017377E = {
+						CreatedOnToolsVersion = 15.1;
+					};
+				};
+			};
+			buildConfigurationList = 1841D4462AA6071C0022A1BE /* Build configuration list for PBXProject "AirBattery" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				"zh-Hans",
+				"zh-Hant",
+			);
+			mainGroup = 1841D4422AA6071C0022A1BE;
+			packageReferences = (
+				18BBC0652C16F4F900D9FE76 /* XCRemoteSwiftPackageReference "MultipeerKit" */,
+				184ADED82DDB2C8A004791F0 /* XCRemoteSwiftPackageReference "swift-argument-parser" */,
+			);
+			productRefGroup = 1841D44C2AA6071C0022A1BE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1841D44A2AA6071C0022A1BE /* AirBattery */,
+				18892A852B81F8320017377E /* AirBatteryWidgetExtension */,
+				18283DA02B854776009B1B13 /* AirBatteryHelper */,
+				184ADED02DDB2B37004791F0 /* abt */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		18283D9F2B854776009B1B13 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18283DAB2B854779009B1B13 /* Preview Assets.xcassets in Resources */,
+				18283DA82B854779009B1B13 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1841D4492AA6071C0022A1BE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				231DA43D303B661C00394459 /* Credits.rtf in Resources */,
+				231DA43C303B661000394459 /* Assets.xcassets in Resources */,
+				231DA43B303B65B100394459 /* Scriptable.sdef in Resources */,
+				231DA43A303B658F00394459 /* logReader.sh in Resources */,
+				231DA439303B657A00394459 /* Preview Assets.xcassets in Resources */,
+				231DA438303B655A00394459 /* Localizable.strings in Resources */,
+				189BD5E92BDE69660056D06C /* InfoPlist.strings in Resources */,
+				180A51B82B84DC3700CF2D15 /* libimobiledevice in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18892A842B81F8320017377E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				231DA437303B636800394459 /* Localizable.strings in Resources */,
+				231DA436303B632900394459 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		18283D9D2B854776009B1B13 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				185AE80E2BA6041400FE1AA2 /* main.swift in Sources */,
+				18283DA42B854776009B1B13 /* AirBatteryHelperApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1841D4472AA6071C0022A1BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				231DA435303B5B4200394459 /* AirBatteryModel.swift in Sources */,
+				1841D4812AAA28880022A1BE /* SettingsView.swift in Sources */,
+				1841D4512AA6071C0022A1BE /* ContentView.swift in Sources */,
+				18F615F32B763DD800873AA4 /* BLEBattery.swift in Sources */,
+				231DA374303B526B00394459 /* Multipeer.swift in Sources */,
+				231DA37B303B526B00394459 /* AirBatteryApp.swift in Sources */,
+				231DA37C303B526B00394459 /* IDeviceBattery.swift in Sources */,
+				231DA37D303B526B00394459 /* BatteryAlertView.swift in Sources */,
+				231DA380303B526B00394459 /* GroupForm.swift in Sources */,
+				231DA383303B526B00394459 /* WindowAccessor.swift in Sources */,
+				231DA385303B526B00394459 /* AppleScript.swift in Sources */,
+				184ADF022DDB6C9F004791F0 /* BTTool.swift in Sources */,
+				184ADF032DDB6C9F004791F0 /* CommandLineTool.swift in Sources */,
+				184ADF052DDB6C9F004791F0 /* InfoButton.swift in Sources */,
+				184ADF082DDB6C9F004791F0 /* Supports.swift in Sources */,
+				231DA419303B52CD00394459 /* BTDBattery.swift in Sources */,
+				18347DCE2B88417500A78DF6 /* BatteryView.swift in Sources */,
+				18347DCA2B882C6500A78DF6 /* MagicBattery.swift in Sources */,
+				1841D47D2AAA20F80022A1BE /* InternalBattery.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		184ADECD2DDB2B37004791F0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				184ADEE52DDB49C2004791F0 /* AirBatteryModel.swift in Sources */,
+				184ADF0D2DDB6C9F004791F0 /* Supports.swift in Sources */,
+				184ADEE62DDB49C7004791F0 /* InternalBattery.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18892A822B81F8320017377E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18892AA22B82F0880017377E /* AirBatteryModel.swift in Sources */,
+				18EF7E632C141CB70065A9E1 /* BatteryWidget3.swift in Sources */,
+				231DA402303B52CD00394459 /* Supports.swift in Sources */,
+				18892A8E2B81F8320017377E /* widgetBundle.swift in Sources */,
+				18892A902B81F8320017377E /* BatteryWidget.swift in Sources */,
+				180B1C0E2C1204E400DDB570 /* AppIntent.swift in Sources */,
+				18B8E5C92B83C9AD00A20D03 /* BatteryWidget2.swift in Sources */,
+				18892AA32B82F09C0017377E /* InternalBattery.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		18892A982B81F8330017377E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18892A852B81F8320017377E /* AirBatteryWidgetExtension */;
+			targetProxy = 18892A972B81F8330017377E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1841D47A2AA8DEF20022A1BE /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1841D47B2AA8DF0B0022A1BE /* zh-Hans */,
+				1893984D2DF73DF000E7C32E /* zh-Hant */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		189BD5EB2BDE69660056D06C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				189BD5EA2BDE69660056D06C /* zh-Hans */,
+				1893984C2DF73D8100E7C32E /* zh-Hant */,
+			);
+			name = InfoPlist.strings;
+			path = AirBattery;
+			sourceTree = "<group>";
+		};
+		18A0A9CD2AAE07EA00975B81 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18A0A9CC2AAE07EA00975B81 /* zh-Hans */,
+				18C7CFDE2AAF842E005898EF /* Base */,
+				1893984B2DF73D6800E7C32E /* zh-Hant */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		231DA308303B526B00394459 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				231DA307303B526B00394459 /* Base */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		231DA312303B526B00394459 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				231DA311303B526B00394459 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		231DA339303B526B00394459 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				231DA338303B526B00394459 /* zh-Hans */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		231DA33B303B526B00394459 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				231DA33A303B526B00394459 /* zh-Hans */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		231DA33D303B526B00394459 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				231DA33C303B526B00394459 /* zh-Hans */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		231DA340303B526B00394459 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				231DA33F303B526B00394459 /* zh-Hant */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		231DA342303B526B00394459 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				231DA341303B526B00394459 /* zh-Hant */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		231DA344303B526B00394459 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				231DA343303B526B00394459 /* zh-Hant */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		231DA39F303B52CD00394459 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				231DA39E303B52CD00394459 /* Base */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		231DA3A9303B52CD00394459 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				231DA3A8303B52CD00394459 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		231DA3D0303B52CD00394459 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				231DA3CF303B52CD00394459 /* zh-Hans */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		231DA3D2303B52CD00394459 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				231DA3D1303B52CD00394459 /* zh-Hans */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		231DA3D4303B52CD00394459 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				231DA3D3303B52CD00394459 /* zh-Hans */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		231DA3D7303B52CD00394459 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				231DA3D6303B52CD00394459 /* zh-Hant */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		231DA3D9303B52CD00394459 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				231DA3D8303B52CD00394459 /* zh-Hant */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		231DA3DB303B52CD00394459 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				231DA3DA303B52CD00394459 /* zh-Hant */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		18283DAE2B854779009B1B13 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = AirBatteryHelper/AirBatteryHelper.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 148;
+				DEVELOPMENT_ASSET_PATHS = "\"AirBatteryHelper/Preview Content\"";
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_LSBackgroundOnly = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2024 lihaoyun6. All rights reserved.";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.4.8;
+				PRODUCT_BUNDLE_IDENTIFIER = com.callie.skye.AirBatteryHelper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		18283DAF2B854779009B1B13 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = AirBatteryHelper/AirBatteryHelper.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 148;
+				DEVELOPMENT_ASSET_PATHS = "\"AirBatteryHelper/Preview Content\"";
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_LSBackgroundOnly = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2024 lihaoyun6. All rights reserved.";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.4.8;
+				PRODUCT_BUNDLE_IDENTIFIER = com.callie.skye.AirBatteryHelper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		1841D4582AA6071D0022A1BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 7562QGP3N9;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1841D4592AA6071D0022A1BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 7562QGP3N9;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		1841D45B2AA6071D0022A1BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = AirBattery/AirBattery.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 165;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"AirBattery/Preview Content\"";
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AirBattery/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_LSUIElement = YES;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "AirBattery uses Bluetooth to collect battery information from peripheral devices.";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2024 lihaoyun6. All rights reserved.";
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "AirBattery will collect battery information through the local network.";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AirBattery/libimobiledevice/lib",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.6.5;
+				PRODUCT_BUNDLE_IDENTIFIER = com.callieskye.AirBattery;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		1841D45C2AA6071D0022A1BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = AirBattery/AirBattery.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 165;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"AirBattery/Preview Content\"";
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AirBattery/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_LSUIElement = YES;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "AirBattery uses Bluetooth to collect battery information from peripheral devices.";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2024 lihaoyun6. All rights reserved.";
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "AirBattery will collect battery information through the local network.";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AirBattery/libimobiledevice/lib",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.6.5;
+				PRODUCT_BUNDLE_IDENTIFIER = com.callieskye.AirBattery;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		184ADED62DDB2B37004791F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				CODE_SIGN_STYLE = Automatic;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		184ADED72DDB2B37004791F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				CODE_SIGN_STYLE = Automatic;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		18892A9B2B81F8330017377E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = widget/widget.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 165;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = widget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = widget;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2024 lihaoyun6. All rights reserved.";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AirBattery/libimobiledevice/lib",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.6.5;
+				PRODUCT_BUNDLE_IDENTIFIER = com.callieskye.AirBattery.widget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		18892A9C2B81F8330017377E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = widget/widget.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 165;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = widget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = widget;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2024 lihaoyun6. All rights reserved.";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AirBattery/libimobiledevice/lib",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.6.5;
+				PRODUCT_BUNDLE_IDENTIFIER = com.callieskye.AirBattery.widget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		18283DAD2B854779009B1B13 /* Build configuration list for PBXNativeTarget "AirBatteryHelper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18283DAE2B854779009B1B13 /* Debug */,
+				18283DAF2B854779009B1B13 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1841D4462AA6071C0022A1BE /* Build configuration list for PBXProject "AirBattery" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1841D4582AA6071D0022A1BE /* Debug */,
+				1841D4592AA6071D0022A1BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1841D45A2AA6071D0022A1BE /* Build configuration list for PBXNativeTarget "AirBattery" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1841D45B2AA6071D0022A1BE /* Debug */,
+				1841D45C2AA6071D0022A1BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		184ADED52DDB2B37004791F0 /* Build configuration list for PBXNativeTarget "abt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				184ADED62DDB2B37004791F0 /* Debug */,
+				184ADED72DDB2B37004791F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18892A9D2B81F8330017377E /* Build configuration list for PBXNativeTarget "AirBatteryWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18892A9B2B81F8330017377E /* Debug */,
+				18892A9C2B81F8330017377E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		184ADED82DDB2C8A004791F0 /* XCRemoteSwiftPackageReference "swift-argument-parser" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-argument-parser.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.5.0;
+			};
+		};
+		18BBC0652C16F4F900D9FE76 /* XCRemoteSwiftPackageReference "MultipeerKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/insidegui/MultipeerKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.4.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		184ADED92DDB2C8A004791F0 /* ArgumentParser */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 184ADED82DDB2C8A004791F0 /* XCRemoteSwiftPackageReference "swift-argument-parser" */;
+			productName = ArgumentParser;
+		};
+		18BBC0662C16F4F900D9FE76 /* MultipeerKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 18BBC0652C16F4F900D9FE76 /* XCRemoteSwiftPackageReference "MultipeerKit" */;
+			productName = MultipeerKit;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 1841D4432AA6071C0022A1BE /* Project object */;
+}

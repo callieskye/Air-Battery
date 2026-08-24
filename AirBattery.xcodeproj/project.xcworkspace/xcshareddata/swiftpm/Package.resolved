@@ -1,0 +1,24 @@
+{
+  "originHash" : "5a0d6b05bd26c16612c2ff487ab5596e29ee221d311e57867799fb68062d0e17",
+  "pins" : [
+    {
+      "identity" : "multipeerkit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/insidegui/MultipeerKit.git",
+      "state" : {
+        "revision" : "ee013fd04f20166ea40ff456a67058c040289c1c",
+        "version" : "0.4.0"
+      }
+    },
+    {
+      "identity" : "swift-argument-parser",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apple/swift-argument-parser.git",
+      "state" : {
+        "revision" : "41982a3656a71c768319979febd796c6fd111d5c",
+        "version" : "1.5.0"
+      }
+    }
+  ],
+  "version" : 3
+}
