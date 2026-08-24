@@ -1,7 +1,7 @@
 <p align="center">
 <img src="./AirBattery/Assets.xcassets/AppIcon.appiconset/icon_128x128@2x.png" width="200" height="200" />
 <h1 align="center">AirBattery</h1>
-<h3 align="center">Get battery usage of all devices on Mac and show them on the Dock / StatusBar / Widgets!<br><a href="./README_zh.md">[中文版本]</a><br><a 
+<h3 align="center">Get battery usage of all devices on Mac and show them on the Dock / StatusBar / Widgets!
 
 ## Callie's Patch — v1.6.5
 
