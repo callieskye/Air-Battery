@@ -21,9 +21,6 @@ This is a personally-patched fork with a batch of bug fixes and new features on 
 ### System Requirements:
 - macOS 14.0 and Later (raised from the original project's macOS 11.0 minimum, so this build could move onto modern SwiftUI/IOKit APIs instead of carrying legacy fallback code)
 
-### Installation:
-Download the latest installation file [here](../../releases/latest) or install via Homebrew:  
-
 
 ### Usage: 
 - After AirBattery is started, it will be displayed on both the Dock and the status bar by default, or only one of them (can be configured)  
